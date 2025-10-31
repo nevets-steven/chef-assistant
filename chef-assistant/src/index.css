@@ -13,6 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   --border-radius: 8px;
+  --border-color: rgb(133, 133, 133);
 }
 
 a {
@@ -46,18 +47,24 @@ h1 {
 .form label{
   flex: 1;
 }
-.ingredients{
+.ingredients, .dish-goal, .servings{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
-.ingredients textarea{
+textarea, input{
   flex: 1;
   border-radius: var(--border-radius);
   font-family: inherit;
   font-size: 1rem;
   font-weight: 500;
+}
+
+.servings input{
+  border: 1px solid ;
+  text-align: center;
+  border: 1px solid var(--border-color);
 }
 
 button {

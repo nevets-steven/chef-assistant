@@ -39,6 +39,28 @@ export default function FormPanel(){
 
                     </textarea>
                 </div>
+                <div className="dish-goal">
+                    <label htmlFor="dish-gaol">What are you making? </label>
+                    <textarea 
+                    name="dish-goal" 
+                    id="dish-goal"
+                    value={dishGoal}
+                    type='text'
+                    rows={4}
+                    onChange={(e) => setDishGoal(e.target.value)}>
+
+                    </textarea>
+                </div>
+                <div className="servings">
+                    <label htmlFor="servings">Servings: </label>
+                    <input 
+                    type="number" 
+                    name="servings" 
+                    id="servings" 
+                    min={1}
+                    value={servings}
+                    onChange={(e) => setServings(e.target.value)}/>
+                </div>
 
 
 
