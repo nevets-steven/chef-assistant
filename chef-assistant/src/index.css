@@ -103,12 +103,29 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+.btnSubmit{
+  margin-top: 1.5rem;
+}
 button:hover {
   border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+button:disabled{
+  cursor: not-allowed;
+  border: none;
+}
+
+
+/* Action bar */
+
+.actions-bar{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 @media (prefers-color-scheme: light) {

@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from "./components/header"
 import FormPanel from './components/formPanel'
+import ActionsBar from './components/ActionsBar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,11 +34,32 @@ function App() {
   //   </>
   // )
 
+  const handleReset = () => {
+    console.log("Reset clicked");
+  };
 
+  const handleRegenerate = () => {
+    console.log("Regenerate clicked, will reuse last inputs");
+  };
+
+  const handleCopy = () => {
+    console.log("Copy clicked will copy, once rendered");
+  };
+  const handlePrint = () => {
+    window.print();
+  }
   return (
     <>
     <Header />
     <FormPanel />
+    <ActionsBar 
+    onReset={handleReset}
+    onRegenerate={handleRegenerate}
+    onCopy={handleCopy}
+    onPrint={handlePrint}
+    hasResult={false} //set true once resultPanel is showing recipe
+    canRegnerate={false} //set true after first generate
+    /> 
     </>
   )
 }
