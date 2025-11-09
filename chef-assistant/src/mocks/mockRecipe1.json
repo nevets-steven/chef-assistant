@@ -1,0 +1,26 @@
+{
+  "title": "Lemon-Parmesan Chicken Pasta (Pan Sauce)",
+  "summary": "Quick stovetop pasta using pasta water, lemon juice, and Parmesan.",
+  "servings": 2,
+  "total_time_min": 25,
+  "ingredients": [
+    { "name": "Chicken breast", "qty": 10, "unit": "oz" },
+    { "name": "Cooked pasta", "qty": 8, "unit": "oz", "notes": "reserve pasta water" },
+    { "name": "Pasta water", "qty": 1, "unit": "cup" },
+    { "name": "Lemon juice", "qty": 2, "unit": "tbsp" },
+    { "name": "Parmesan, grated", "qty": 0.5, "unit": "cup" },
+    { "name": "Olive oil", "qty": 1, "unit": "tbsp" },
+    { "name": "Salt", "qty": null, "unit": null },
+    { "name": "Black pepper", "qty": null, "unit": null }
+  ],
+  "steps": [
+    { "no": 1, "text": "Season and sear chicken in olive oil until cooked through; rest and slice.", "time_min": 10 },
+    { "no": 2, "text": "Deglaze pan with pasta water and lemon juice, scraping browned bits.", "time_min": 2 },
+    { "no": 3, "text": "Off heat, whisk in Parmesan to emulsify into a glossy sauce.", "time_min": 1 },
+    { "no": 4, "text": "Toss in cooked pasta and sliced chicken; adjust with more pasta water as needed.", "time_min": 2 },
+    { "no": 5, "text": "Season with salt and pepper; serve immediately.", "time_min": 1 }
+  ],
+  "warnings": [
+    "Cook chicken to an internal temperature of 165°F (74°C)."
+  ]
+}

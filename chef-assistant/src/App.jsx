@@ -5,6 +5,8 @@ import './App.css'
 import Header from "./components/header"
 import FormPanel from './components/formPanel'
 import ActionsBar from './components/ActionsBar'
+import ResultPanel from './components/ResultPanel'
+import mockRecipe from "./mocks/mockRecipe1.json"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -60,6 +62,7 @@ function App() {
     hasResult={false} //set true once resultPanel is showing recipe
     canRegnerate={false} //set true after first generate
     /> 
+    <ResultPanel recipe={mockRecipe} />
     </>
   )
 }
